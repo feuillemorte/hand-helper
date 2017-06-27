@@ -2,57 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2dc1267-81ea-46aa-bc42-8d41502d709c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ipython/locators/pages/google_locators.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ipython/pages/google.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ipython/scenarios/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ipython/scenarios/search_google.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt_app/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt_app/app/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt_app/configs/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt_app/configs/config_default.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt_app/helpers/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt_app/helpers/js_helper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt_app/helpers/main_helper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt_app/helpers/waiting_helper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt_app/locators/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt_app/locators/pages/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt_app/locators/pages/google_locators.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt_app/pages/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt_app/scenarios/__init__.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/configs/config_default.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/helpers/faker_helper.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/helpers/venture_helper.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/locators/menu/top_menu_locators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/locators/modals/cart_poppup_locators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/locators/modals/facebook_auth_locators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/locators/modals/google_auth_locators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/locators/modals/sign_in_locators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/locators/pages/delivery_info_locators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/locators/pages/login_locators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/locators/pages/pdp_locators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/locators/pages/register_locators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modals/cart_poppup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modals/sign_in.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/delivery_info.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/pdp.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/register.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/pyqt_app/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/__init__.py" afterPath="$PROJECT_DIR$/ipython/helpers/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/app.py" afterPath="$PROJECT_DIR$/pyqt_app/app/app.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/auth_dialog.py" afterPath="$PROJECT_DIR$/pyqt_app/app/search_dialog.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chromedriver/chromedriver_linux_2.29" afterPath="$PROJECT_DIR$/pyqt_app/chromedriver/chromedriver_linux_2.29" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chromedriver/chromedriver_mac_2.29" afterPath="$PROJECT_DIR$/pyqt_app/chromedriver/chromedriver_mac_2.29" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chromedriver/chromedriver_win_2.29.exe" afterPath="$PROJECT_DIR$/pyqt_app/chromedriver/chromedriver_win_2.29.exe" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/configs/__init__.py" afterPath="$PROJECT_DIR$/ipython/locators/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/helpers/js_helper.py" afterPath="$PROJECT_DIR$/ipython/helpers/js_helper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/helpers/main_helper.py" afterPath="$PROJECT_DIR$/ipython/helpers/main_helper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/helpers/waiting_helper.py" afterPath="$PROJECT_DIR$/ipython/helpers/waiting_helper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/init.py" afterPath="$PROJECT_DIR$/pyqt_app/init.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/login.py" afterPath="$PROJECT_DIR$/pyqt_app/pages/google.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/pyqt_app/requirements.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scenarios/__init__.py" afterPath="$PROJECT_DIR$/ipython/pages/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scenarios/customer.py" afterPath="$PROJECT_DIR$/pyqt_app/scenarios/search_google.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/start.py" afterPath="$PROJECT_DIR$/pyqt_app/start.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,16 +19,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="google_locators.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pyqt_app/locators/pages/google_locators.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="search_google.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyqt_app/scenarios/search_google.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -99,16 +41,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ipython/pages/google.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="51" lean-forward="false" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main_helper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyqt_app/helpers/main_helper.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -119,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="start.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyqt_app/start.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -127,6 +59,29 @@
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="18">
+                <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -231,7 +186,6 @@
         <option value="$PROJECT_DIR$/start.py" />
         <option value="$PROJECT_DIR$/app/auth_dialog.py" />
         <option value="$PROJECT_DIR$/helpers/venture_helper.py" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/init.py" />
         <option value="$PROJECT_DIR$/app/app.py" />
         <option value="$PROJECT_DIR$/helpers/main_helper.py" />
@@ -261,6 +215,7 @@
         <option value="$PROJECT_DIR$/pyqt_app/helpers/main_helper.py" />
         <option value="$PROJECT_DIR$/pyqt_app/pages/google.py" />
         <option value="$PROJECT_DIR$/ipython/helpers/main_helper.py" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -596,11 +551,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/pyqt_app" />
       <recent name="$PROJECT_DIR$/pyqt_app/pages" />
       <recent name="$PROJECT_DIR$/ipython/locators" />
       <recent name="$PROJECT_DIR$/pyqt_app/locators" />
-      <recent name="$PROJECT_DIR$/pyqt_app/locators/pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ipython" />
@@ -871,23 +826,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ipython/pages/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="774">
-            <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11016">
@@ -1247,6 +1185,25 @@
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="18">
+            <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
