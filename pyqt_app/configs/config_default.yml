@@ -1,0 +1,8 @@
+common:
+  chromedriver_mac: ./chromedriver/chromedriver_mac_2.29
+  chromedriver_linux: ./chromedriver/chromedriver_linux_2.29
+  chromedriver_win: ./chromedriver/chromedriver_win_2.29.exe
+
+  default_url: http://google.com
+
+  implicitly_wait: 5
