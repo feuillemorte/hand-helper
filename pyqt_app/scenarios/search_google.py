@@ -1,30 +1,20 @@
-import selenium
-
-from pages import google
 from helpers.main_helper import get
+from pages import google
 
 
-def search(pbar, log):
+def search(pbar):
     """Search with google"""
-    try:
-        pbar.emit(10)
-        get()
+    pbar.emit(10)
+    get()
 
-        pbar.emit(30)
-        google.search('Funny cats')
-
-    except (selenium.common.exceptions.TimeoutException, selenium.common.exceptions.WebDriverException) as e:
-        log.emit('Message: {}.\nPlease, try again or contact to developer'.format(e))
+    pbar.emit(30)
+    google.search('Funny cats')
 
 
-def search_with_query(pbar, log, search_query):
+def search_with_query(pbar, search_query):
     """Search with google"""
-    try:
-        pbar.emit(10)
-        get()
+    pbar.emit(10)
+    get()
 
-        pbar.emit(30)
-        google.search(search_query)
-
-    except (selenium.common.exceptions.TimeoutException, selenium.common.exceptions.WebDriverException) as e:
-        log.emit('Message: {}.\nPlease, try again or contact to developer'.format(e))
+    pbar.emit(30)
+    google.search(search_query)
