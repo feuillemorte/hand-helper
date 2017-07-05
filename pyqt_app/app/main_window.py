@@ -31,7 +31,7 @@ class MainWindow(Widgets.QWidget):
         if inputter.exec_():
             query = inputter.queryText.text()
 
-            self.start_thread(search_with_query, [query])
+            self.start_thread(search_with_query, query)
 
     def search_dialog(self):
         text, ok = Widgets.QInputDialog.getText(self, 'Search Dialog', 'Enter query:')
