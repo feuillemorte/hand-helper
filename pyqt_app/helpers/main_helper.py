@@ -5,14 +5,13 @@ from helpers.waiting_helper import wait, wait_clickable
 from init import Setup
 
 config = Setup().config
-driver = Setup().driver
 
 
 def find(xpath):
     """Find the element on page and return object of element"""
     wait(xpath)
     wait_clickable(xpath)
-    return driver.find_element_by_xpath(xpath)
+    return Setup().driver.find_element_by_xpath(xpath)
 
 
 def send(xpath, text):
@@ -32,20 +31,20 @@ def get(url='', domain=None):
     """Go to url"""
     if not domain:
         domain = get_domain()
-    driver.get('{}{}'.format(domain, url))
-    return driver.current_url
+    Setup().driver.get('{}{}'.format(domain, url))
+    return Setup().driver.current_url
 
 
 def url():
     """Get current url"""
-    return driver.current_url
+    return Setup().driver.current_url
 
 
 def is_displayed(xpath):
     """Check element is visible"""
-    driver.implicitly_wait(1)
-    element = driver.find_elements_by_xpath(xpath)
-    driver.implicitly_wait(config['common']['implicitly_wait'])
+    Setup().driver.implicitly_wait(1)
+    element = Setup().driver.find_elements_by_xpath(xpath)
+    Setup().driver.implicitly_wait(config['common']['implicitly_wait'])
 
     return element
 

@@ -7,7 +7,6 @@ from app.worker import Worker
 from init import Setup
 from scenarios.search_google import search, search_with_query
 
-driver = Setup().driver
 config = Setup().config
 
 
@@ -40,7 +39,7 @@ class MainWindow(Widgets.QWidget):
             self.start_thread(search_with_query, [text])
 
     def closeEvent(self, event):
-        driver.quit()
+        Setup().driver.quit()
         event.accept()
 
     def start_thread(self, func, *func_args):

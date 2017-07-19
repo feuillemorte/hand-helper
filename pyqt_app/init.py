@@ -17,9 +17,9 @@ class Singleton(type):
 class Setup(metaclass=Singleton):
     def __init__(self):
         self.config = self.get_config()
-        self.driver = self.get_driver()
+        self.driver = None
 
-    def get_driver(self):
+    def start_browser(self):
         config = self.config
 
         chrome_options = Options()
@@ -31,6 +31,8 @@ class Setup(metaclass=Singleton):
         browser.maximize_window()
         browser.implicitly_wait(config['common']['implicitly_wait'])
         browser.get(config['common']['default_url'])
+
+        self.driver = browser
 
         return browser
 
