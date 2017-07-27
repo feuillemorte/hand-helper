@@ -1,3 +1,5 @@
+# author: Oleg Sushchenko <fmorte@ya.ru>
+
 from PyQt5 import QtWidgets as Widgets
 from PyQt5 import uic
 

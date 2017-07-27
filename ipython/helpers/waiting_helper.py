@@ -1,3 +1,5 @@
+# author: Oleg Sushchenko <fmorte@ya.ru>
+
 import time
 
 from init import Setup

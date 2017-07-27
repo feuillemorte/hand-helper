@@ -1,5 +1,13 @@
-import platform
+# author: Oleg Sushchenko <fmorte@ya.ru>
 
+import platform
+import stat
+import urllib.request
+import zipfile
+from os import chmod, remove
+from os.path import isfile
+
+import requests
 import yaml
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -37,18 +45,32 @@ class Setup(metaclass=Singleton):
         return browser
 
     def get_config(self):
-        try:
+        if isfile('configs/config.yml'):
             with open('configs/config.yml', 'r') as ymlfile:
                 config = yaml.load(ymlfile)
-        except FileNotFoundError:
+        else:
             with open('configs/config_default.yml', 'r') as ymlfile:
                 config = yaml.load(ymlfile)
-
-        if platform.system().lower() == 'linux':
-            config['chromedriver_path'] = config['common']['chromedriver_linux']
-        elif platform.system().lower() == 'darwin':
-            config['chromedriver_path'] = config['common']['chromedriver_mac']
-        elif platform.system().lower() == 'windows':
-            config['chromedriver_path'] = config['common']['chromedriver_win']
+        config['chromedriver_path'] = self.get_chromedriver_path()
 
         return config
+
+    def get_chromedriver_path(self):
+        if not isfile('./chromedriver/chromedriver'):
+            os_name = platform.system().lower()
+            version = requests.request('GET', 'http://chromedriver.storage.googleapis.com/LATEST_RELEASE').json()
+            if os_name == 'linux':
+                os_version = 'linux64'
+            elif os_name == 'darwin':
+                os_version = 'mac64'
+            elif os_name == 'windows':
+                os_version = 'win32'
+            urllib.request.urlretrieve(
+                f'http://chromedriver.storage.googleapis.com/{version}/chromedriver_{os_version}.zip',
+                f'chromedriver_{os_version}.zip')
+            zip_ref = zipfile.ZipFile(f'chromedriver_{os_version}.zip', 'r')
+            zip_ref.extractall('chromedriver')
+            zip_ref.close()
+            remove(f'chromedriver_{os_version}.zip')
+            chmod('./chromedriver/chromedriver', stat.S_IXUSR | stat.S_IRGRP | stat.S_IROTH)
+        return './chromedriver/chromedriver'

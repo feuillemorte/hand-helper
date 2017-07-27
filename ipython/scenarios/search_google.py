@@ -1,3 +1,5 @@
+# author: Oleg Sushchenko <fmorte@ya.ru>
+
 from pages import google
 from helpers.main_helper import get
 

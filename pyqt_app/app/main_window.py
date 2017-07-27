@@ -1,3 +1,5 @@
+# author: Oleg Sushchenko <fmorte@ya.ru>
+
 import PyQt5.QtWidgets as Widgets
 from PyQt5 import uic
 from PyQt5.QtCore import QThread, pyqtSlot

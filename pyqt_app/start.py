@@ -1,3 +1,5 @@
+# author: Oleg Sushchenko <fmorte@ya.ru>
+
 import sys
 
 from PyQt5 import QtGui

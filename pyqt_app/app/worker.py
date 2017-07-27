@@ -1,3 +1,5 @@
+# author: Oleg Sushchenko <fmorte@ya.ru>
+
 import selenium
 from PyQt5.QtCore import pyqtSignal, QObject
 

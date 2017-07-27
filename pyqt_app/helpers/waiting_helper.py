@@ -1,3 +1,5 @@
+# author: Oleg Sushchenko <fmorte@ya.ru>
+
 import time
 
 from selenium.webdriver.common.by import By

@@ -1,3 +1,5 @@
+# author: Oleg Sushchenko <fmorte@ya.ru>
+
 from helpers.main_helper import find, send, push_enter_key
 from locators.pages import google_locators
 

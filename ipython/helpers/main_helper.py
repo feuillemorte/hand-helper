@@ -1,3 +1,5 @@
+# author: Oleg Sushchenko <fmorte@ya.ru>
+
 from selenium.webdriver.common.keys import Keys
 
 from helpers.js_helper import get_domain
