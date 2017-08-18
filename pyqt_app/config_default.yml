@@ -1,0 +1,14 @@
+# author: Oleg Sushchenko <fmorte@ya.ru>
+
+common:
+  default_url: http://google.com
+
+  implicitly_wait: 5
+
+  logging_level: 20
+  # CRITICAL = 50
+  # ERROR = 40
+  # WARNING = 30
+  # INFO = 20
+  # DEBUG = 10
+  # NOTSET = 0

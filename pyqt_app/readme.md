@@ -1,3 +1,29 @@
+## Build (Ubuntu): ##
+* Install python 3.5
+
+* Create virtualenv and activate it:
+```
+    python3.5 -m venv env
+    source env/bin/activate
+```
+
+* Install packages:
+```
+    pip install -r requirements.txt
+```
+
+* Install pyinstaller:
+```
+    pip install pyinstaller
+```
+
+* Run command
+```
+    pyinstaller --onefile --clean -y --noconsole linux.spec
+```
+
+* Check bin file in dist folder
+
 ## Install (Ubuntu): ##
 * Install google chrome
 

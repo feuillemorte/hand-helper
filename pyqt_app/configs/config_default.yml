@@ -1,6 +1,0 @@
-# author: Oleg Sushchenko <fmorte@ya.ru>
-
-common:
-  default_url: http://google.com
-
-  implicitly_wait: 5
