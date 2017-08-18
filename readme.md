@@ -3,6 +3,7 @@
 Requirements:
 
 Ubuntu 16.04
+Windows 10
 
 Check current_version for binaries
 
