@@ -6,7 +6,7 @@ from PyQt5.QtCore import QThread, pyqtSlot
 
 from app.search_dialog import SearchDialog
 from app.worker import Worker
-from init import Setup
+from init import Setup, resource_path
 from scenarios.search_google import search, search_with_query
 
 config = Setup().config
@@ -15,7 +15,7 @@ config = Setup().config
 class MainWindow(Widgets.QWidget):
     def __init__(self):
         super().__init__()
-        uic.loadUi('app/ui/main_window.ui', self)
+        uic.loadUi(resource_path('app/ui/main_window.ui'), self)
 
         self.log_with_html('<b>Log:</b>')
         self.configView.append('<br>'.join('<b>{}:</b> {}'.format(key, val) for key, val in config['common'].items()))

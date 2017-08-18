@@ -3,11 +3,13 @@
 from PyQt5 import QtWidgets as Widgets
 from PyQt5 import uic
 
+from init import resource_path
+
 
 class SearchDialog(Widgets.QDialog):
     def __init__(self):
         super().__init__()
-        uic.loadUi('app/ui/search_select_dialog.ui', self)
+        uic.loadUi(resource_path('app/ui/search_select_dialog.ui'), self)
         self.show()
 
         self.chooseFromList.clicked.connect(self.get_query)
